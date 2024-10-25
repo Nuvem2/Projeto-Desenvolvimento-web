@@ -25,17 +25,17 @@
                 <form class="form">
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Nome" required>
                     </label>
                     
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" required>
                     </label>
                     
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Senha" required minlength="6" required>
                     </label>
                     
                     
@@ -72,6 +72,45 @@
             </div>
         </div>
     </div>
+    <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required minlength="6" required>
+        
+        <button type="submit">Login</button>
+      </form>
+      
+      <script>
+        const form = document.getElementById('loginForm');
+      
+        form.addEventListener('submit', function (event) {
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+      
+          // Verifica se os campos estão preenchidos
+          if (email === '' || password === '') {
+            alert('Todos os campos são obrigatórios!');
+            event.preventDefault(); // Impede o envio do formulário
+            return;
+          }
+      
+          // Verifica se o email é válido (já é verificado com o input type "email", mas pode ser reforçado aqui)
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(email)) {
+            alert('Insira um email válido!');
+            event.preventDefault();
+            return;
+          }
+      
+          // Verifica se a senha tem no mínimo 6 caracteres
+          if (password.length < 6) {
+            alert('A senha deve ter no mínimo 6 caracteres!');
+            event.preventDefault();
+          }
+        });
+      </script>      
     <script src="js/app.js"></script>
 </body>
 </html>
