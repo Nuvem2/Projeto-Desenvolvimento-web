@@ -1,0 +1,91 @@
+<div className="ExamplesHomePage" style={{width: 1200, height: 1974, background: 'white', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+  <div className="Header" style={{alignSelf: 'stretch', padding: 32, background: '#F5F5F5', borderBottom: '1px #D9D9D9 solid', justifyContent: 'flex-start', alignItems: 'center', gap: 24, display: 'inline-flex'}}>
+    <div className="NavigationPillList" style={{flex: '1 1 0', height: 32, justifyContent: 'flex-end', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
+      <div className="NavigationPill" style={{padding: 8, borderRadius: 8, justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex'}}>
+        <div className="Title" style={{color: '#1E1E1E', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 16, wordWrap: 'break-word'}}>Lixeira</div>
+      </div>
+      <div className="NavigationPill" style={{padding: 8, borderRadius: 8, justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex'}}>
+        <div className="Title" style={{color: '#1E1E1E', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 16, wordWrap: 'break-word'}}>Sobre</div>
+      </div>
+      <div className="NavigationPill" style={{padding: 8, borderRadius: 8, justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex'}}>
+        <div className="Title" style={{color: '#1E1E1E', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 16, wordWrap: 'break-word'}}>Contatos</div>
+      </div>
+    </div>
+    <div className="HeaderAuth" style={{height: 32, justifyContent: 'flex-start', alignItems: 'center', gap: 12, display: 'flex'}}>
+      <div className="Button" style={{flex: '1 1 0', height: 32, padding: 8, background: '#2C2C2C', borderRadius: 8, overflow: 'hidden', border: '1px #2C2C2C solid', justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex'}}>
+        <div className="Button" style={{color: '#F5F5F5', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 16, wordWrap: 'break-word'}}>Login</div>
+      </div>
+    </div>
+  </div>
+  <div className="HeroActions" style={{alignSelf: 'stretch', height: 524, paddingLeft: 24, paddingRight: 24, paddingTop: 160, paddingBottom: 160, background: '#F5F5F5', border: '1px black solid', backdropFilter: 'blur(4px)', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 32, display: 'flex'}}>
+    <div className="TextContentTitle" style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'flex'}}>
+      <div className="Title" style={{alignSelf: 'stretch', textAlign: 'center', color: '#1E1E1E', fontSize: 72, fontFamily: 'Inter', fontWeight: '700', lineHeight: 86.40, wordWrap: 'break-word'}}>Mente Organizada</div>
+      <div className="Subtitle" style={{alignSelf: 'stretch', textAlign: 'center', color: '#757575', fontSize: 32, fontFamily: 'Inter', fontWeight: '400', lineHeight: 38.40, wordWrap: 'break-word'}}>Seja Bem-vindo</div>
+    </div>
+    <div className="ButtonGroup" style={{width: 240, justifyContent: 'flex-start', alignItems: 'center', gap: 16, display: 'inline-flex'}}>
+      <div className="Button" style={{flex: '1 1 0', height: 40, padding: 12, background: '#E3E3E3', borderRadius: 8, overflow: 'hidden', border: '1px #767676 solid', justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex'}}>
+        <div className="Button" style={{color: '#1E1E1E', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 16, wordWrap: 'break-word'}}>Criar Lembrete</div>
+      </div>
+    </div>
+  </div>
+  <img className="Section" style={{alignSelf: 'stretch', height: 400, background: 'linear-gradient(0deg, #E3E3E3 0%, #E3E3E3 100%)'}} src="https://via.placeholder.com/1200x400" />
+  <div className="CardGridTestimonials" style={{alignSelf: 'stretch', height: 622, padding: 64, background: 'linear-gradient(0deg, #FFD700 0%, #FFD700 100%), linear-gradient(0deg, rgba(255, 106.25, 0, 0.20) 0%, rgba(255, 106.25, 0, 0.20) 100%)', border: '1px black solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 48, display: 'flex'}}>
+    <div className="TextContentHeading" style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
+      <div className="Heading" style={{alignSelf: 'stretch', color: '#1E1E1E', fontSize: 24, fontFamily: 'Inter', fontWeight: '600', lineHeight: 28.80, wordWrap: 'break-word'}}>Listas</div>
+      <div className="Subheading" style={{alignSelf: 'stretch', color: '#757575', fontSize: 20, fontFamily: 'Inter', fontWeight: '400', lineHeight: 24, wordWrap: 'break-word'}}>Listas e Metas em aberto :</div>
+    </div>
+    <div className="CardGrid" style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 48, display: 'inline-flex'}}>
+      <div className="TestimonialCard" style={{flex: '1 1 0', padding: 24, background: 'white', borderRadius: 8, border: '1px #D9D9D9 solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 24, display: 'inline-flex'}}>
+        <div className="TextHeading" style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+          <div className="TextHeading" style={{flex: '1 1 0', color: '#1E1E1E', fontSize: 24, fontFamily: 'Inter', fontWeight: '600', lineHeight: 28.80, wordWrap: 'break-word'}}>“Titulo 1”</div>
+        </div>
+        <div className="AvatarBlock" style={{width: 139, justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'inline-flex'}}>
+          <div className="Info" style={{flex: '1 1 0', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 2, display: 'inline-flex'}}>
+            <div className="Title" style={{alignSelf: 'stretch', color: '#757575', fontSize: 16, fontFamily: 'Inter', fontWeight: '600', lineHeight: 22.40, wordWrap: 'break-word'}}>Title</div>
+            <div className="Description" style={{alignSelf: 'stretch', color: '#B3B3B3', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 22.40, wordWrap: 'break-word'}}>Description</div>
+          </div>
+        </div>
+      </div>
+      <div className="TestimonialCard" style={{flex: '1 1 0', padding: 24, background: 'white', borderRadius: 8, border: '1px #D9D9D9 solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 24, display: 'inline-flex'}}>
+        <div className="TextHeading" style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+          <div className="TextHeading" style={{flex: '1 1 0', color: '#1E1E1E', fontSize: 24, fontFamily: 'Inter', fontWeight: '600', lineHeight: 28.80, wordWrap: 'break-word'}}>“Titulo 2”</div>
+        </div>
+        <div className="AvatarBlock" style={{width: 139, justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'inline-flex'}}>
+          <div className="Info" style={{flex: '1 1 0', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 2, display: 'inline-flex'}}>
+            <div className="Title" style={{alignSelf: 'stretch', color: '#757575', fontSize: 16, fontFamily: 'Inter', fontWeight: '600', lineHeight: 22.40, wordWrap: 'break-word'}}>Title</div>
+            <div className="Description" style={{alignSelf: 'stretch', color: '#B3B3B3', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 22.40, wordWrap: 'break-word'}}>Description</div>
+          </div>
+        </div>
+      </div>
+      <div className="TestimonialCard" style={{flex: '1 1 0', padding: 24, background: 'white', borderRadius: 8, border: '1px #D9D9D9 solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 24, display: 'inline-flex'}}>
+        <div className="TextHeading" style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+          <div className="TextHeading" style={{flex: '1 1 0', color: '#1E1E1E', fontSize: 24, fontFamily: 'Inter', fontWeight: '600', lineHeight: 28.80, wordWrap: 'break-word'}}>“Titulo 3”</div>
+        </div>
+        <div className="AvatarBlock" style={{width: 139, justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'inline-flex'}}>
+          <div className="Info" style={{flex: '1 1 0', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 2, display: 'inline-flex'}}>
+            <div className="Title" style={{alignSelf: 'stretch', color: '#757575', fontSize: 16, fontFamily: 'Inter', fontWeight: '600', lineHeight: 22.40, wordWrap: 'break-word'}}>Title</div>
+            <div className="Description" style={{alignSelf: 'stretch', color: '#B3B3B3', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 22.40, wordWrap: 'break-word'}}>Description</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="Footer" style={{width: 1200, paddingTop: 32, paddingBottom: 160, paddingLeft: 32, paddingRight: 32, background: 'white', borderTop: '1px #D9D9D9 solid', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 16, display: 'inline-flex'}}>
+    <div className="TextLinkList" style={{width: 262, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'inline-flex'}}>
+      <div className="Title" style={{alignSelf: 'stretch', height: 38, paddingBottom: 16, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10, display: 'flex'}}>
+        <div className="TextStrong" style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+          <div className="TextStrong" style={{color: '#1E1E1E', fontSize: 16, fontFamily: 'Inter', fontWeight: '600', lineHeight: 22.40, wordWrap: 'break-word'}}>Informações:</div>
+        </div>
+      </div>
+      <div className="TextLinkListItem" style={{width: 89, height: 22, position: 'relative'}}>
+        <div className="ListItem" style={{left: 0, top: 0, position: 'absolute', color: '#1E1E1E', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 22.40, wordWrap: 'break-word'}}>Feedback</div>
+      </div>
+      <div className="TextLinkListItem" style={{width: 89, height: 22, position: 'relative'}}>
+        <div className="ListItem" style={{left: 0, top: 0, position: 'absolute', color: '#1E1E1E', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 22.40, wordWrap: 'break-word'}}>Suporte</div>
+      </div>
+      <div className="TextLinkListItem" style={{width: 89, height: 22, position: 'relative'}}>
+        <div className="ListItem" style={{left: 0, top: 0, position: 'absolute', color: '#1E1E1E', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 22.40, wordWrap: 'break-word'}}>Desenvolvedores</div>
+      </div>
+    </div>
+  </div>
+</div>
