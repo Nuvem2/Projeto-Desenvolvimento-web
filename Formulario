@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Tarefa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #f0f0f0; 
+        }
+        form {
+            background: #1a1a1a; 
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+            width: 350px;
+            transition: transform 0.2s;
+        }
+        form:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #fff; 
+            font-size: 24px;
+            text-align: center;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #bbb; 
+            font-weight: bold;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #444; 
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #333; 
+            color: #fff; 
+            box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.1);
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        button {
+            background-color: #007bff; 
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        .favorite {
+            margin-top: 10px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="reminderForm">
+        <h2>Adicionar Lembrete</h2>
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Hora:</label>
+        <input type="time" id="time" name="time" required>
+
+        <div class="favorite">
+            <label>
+                <input type="checkbox" id="favorite" name="favorite">
+                Priorizar Tarefa
+            </label>
+        </div>
+
+        <button type="submit">Adicionar Lembrete</button>
+    </form>
+
+    <script>
+        document.getElementById('reminderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const title = document.getElementById('title').value;
+            const description = document.getElementById('description').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const favorite = document.getElementById('favorite').checked;
+
+            console.log(`Lembrete: ${title}, Descrição: ${description}, Data: ${date}, Hora: ${time}, Favorito: ${favorite}`);
+            alert('Lembrete adicionado com sucesso!');
+            document.getElementById('reminderForm').reset();
+        });
+    </script>
+
+</body>
+</html>
