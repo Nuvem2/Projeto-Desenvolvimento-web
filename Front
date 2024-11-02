@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        .ExamplesHomePage {
+            width: 1200px;
+            height: auto;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .Header {
+            align-self: stretch;
+            padding: 32px;
+            background: #F5F5F5;
+            border-bottom: 1px #D9D9D9 solid;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 24px;
+        }
+        .NavigationPillList {
+            flex: 1;
+            height: 32px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .NavigationPill {
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+        .Title {
+            color: #1E1E1E;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        .HeaderAuth {
+            height: 32px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 12px;
+        }
+        .Button {
+            flex: 1;
+            height: 32px;
+            padding: 8px;
+            background: #2C2C2C;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+        .Button div {
+            color: #F5F5F5;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        .HeroActions {
+            align-self: stretch;
+            padding: 160px 24px;
+            background: #D9D9D9;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+        .TextContentTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .TextContentTitle .Title {
+            align-self: stretch;
+            text-align: center;
+            color: #1E1E1E;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 86.4px;
+        }
+        .Subtitle {
+            align-self: stretch;
+            text-align: center;
+            color: #757575;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 38.4px;
+        }
+        .ButtonGroup {
+            width: 240px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+        }
+        .CardGridTestimonials {
+            align-self: stretch;
+            padding: 64px;
+            background: linear-gradient(0deg, #FFD700 0%, #FFD700 100%), 
+                        linear-gradient(0deg, rgba(255, 106.25, 0, 0.20) 0%, rgba(255, 106.25, 0, 0.20) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 48px;
+        }
+        .TextContentHeading {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .Heading {
+            align-self: stretch;
+            color: #1E1E1E;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 28.8px;
+        }
+        .Subheading {
+            align-self: stretch;
+            color: #757575;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        .CardGrid {
+            align-self: stretch;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 48px;
+        }
+        .TestimonialCard {
+            flex: 1;
+            padding: 24px;
+            background: white;
+            border-radius: 8px;
+            border: 1px #D9D9D9 solid;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+        }
+        .Footer {
+            width: 1200px;
+            padding: 32px;
+            background: white;
+            border-top: 1px #D9D9D9 solid;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .TextLinkList {
+            width: 262px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .TextLinkListItem {
+            width: 89px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="ExamplesHomePage">
+        <div class="Header">
+            <div class="NavigationPillList">
+                <div class="NavigationPill"><div class="Title">Lixeira</div></div>
+                <div class="NavigationPill"><div class="Title">Sobre</div></div>
+                <div class="NavigationPill"><div class="Title">Contatos</div></div>
+            </div>
+            <div class="HeaderAuth">
+                <div class="Button"><div>Login</div></div>
+            </div>
+        </div>
+        <div class="HeroActions">
+            <div class="TextContentTitle">
+                <div class="Title">Mente Organizada</div>
+                <div class="Subtitle">Seja Bem-vindo</div>
+            </div>
+            <div class="ButtonGroup">
+                <div class="Button"><div>Criar Lembrete</div></div>
+            </div>
+        </div>
+        <div class="Section">
+            <img src="https://via.placeholder.com/1200x537" alt="Placeholder" style="align-self: stretch; height: 537px;" />
+        </div>
+        <div class="CardGridTestimonials">
+            <div class="TextContentHeading">
+                <div class="Heading">Listas</div>
+                <div class="Subheading">Listas e Metas em aberto:</div>
+            </div>
+            <div class="CardGrid">
+                <div class="TestimonialCard">
+                    <div class="TextHeading">“Título 1”</div>
+                    <div class="AvatarBlock">
+                        <div class="Info">
+                            <div class="Title">Title</div>
+                            <div class="Description">Description</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="TestimonialCard">
+                    <div class="TextHeading">“Título 2”</div>
+                    <div class="AvatarBlock">
+                        <div class="Info">
+                            <div class="Title">Title</div>
+                            <div class="Description">Description</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="TestimonialCard">
+                    <div class="TextHeading">“Título 3”</div>
+                    <div class="AvatarBlock">
+                        <div class="Info">
+                            <div class="Title">Title</div>
+                            <div class="Description">Description</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="TextLinkList">
+                <div class="Title">Informações:</div>
+                <div class="TextLinkListItem"><div>Feedback</div></div>
+                <div class="TextLinkListItem"><div>Suporte</div></div>
+                <div class="TextLinkListItem"><div>Desenvolvedores</div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
