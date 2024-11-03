@@ -17,9 +17,9 @@
         }
         form {
             background: #1a1a1a; 
-            padding: 30px;
+            padding: 65px;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 1.0);
             width: 350px;
             transition: transform 0.2s;
         }
