@@ -1,257 +1,297 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Página</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mente Organizada</title>
     <style>
-        body {
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+        * {
+            padding: 0;
             margin: 0;
-            font-family: 'Inter', sans-serif;
+            box-sizing: border-box;
+            font-family: "Poppins";
         }
-        .ExamplesHomePage {
-            width: 1200px;
+
+        body {
+            background-color: #131133;
+        }
+        .Container-cabeçalho {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 3rem;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
             height: auto;
-            background: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
         }
-        .Header {
-            align-self: stretch;
-            padding: 32px;
-            background: #F5F5F5;
-            border-bottom: 1px #D9D9D9 solid;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 24px;
-        }
-        .NavigationPillList {
-            flex: 1;
-            height: 32px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
-            gap: 8px;
-        }
-        .NavigationPill {
-            padding: 8px;
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-        }
-        .Title {
-            color: #1E1E1E;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 16px;
-        }
-        .HeaderAuth {
-            height: 32px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 12px;
-        }
-        .Button {
-            flex: 1;
-            height: 32px;
-            padding: 8px;
-            background: #2C2C2C;
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-        }
-        .Button div {
-            color: #F5F5F5;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 16px;
-        }
-        .HeroActions {
-            align-self: stretch;
-            padding: 160px 24px;
-            background: #D9D9D9;
-            border: 1px solid black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 32px;
-        }
-        .TextContentTitle {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
-        .TextContentTitle .Title {
-            align-self: stretch;
-            text-align: center;
-            color: #1E1E1E;
-            font-size: 72px;
+
+        .logo h1 {
+            color: #ffffff;
+            font-size: 1.55rem;
             font-weight: 700;
-            line-height: 86.4px;
+            margin-left: 0.8rem;
         }
-        .Subtitle {
-            align-self: stretch;
-            text-align: center;
-            color: #757575;
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 38.4px;
-        }
-        .ButtonGroup {
-            width: 240px;
+
+        ul {
             display: flex;
-            justify-content: flex-start;
+            list-style: none;
+            gap: 5rem;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        ul li a:hover {
+            color: #000000;
+        }
+
+        .btn {
+            color: #fff;
+            background-color: #5bacdf;
+            padding: 0.9rem 1.3rem;
+            border-radius: 0.5rem;
+        }
+
+        .btn:hover {
+            background-color: #011927;
+        }
+
+        .Meio {
+            display: flex;
+            max-width: 100%;
+            margin-top: 5rem;
+            justify-content: space-around;
             align-items: center;
-            gap: 16px;
+            flex-wrap: wrap;
         }
-        .CardGridTestimonials {
-            align-self: stretch;
-            padding: 64px;
-            background: linear-gradient(0deg, #FFD700 0%, #FFD700 100%), 
-                        linear-gradient(0deg, rgba(255, 106.25, 0, 0.20) 0%, rgba(255, 106.25, 0, 0.20) 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 48px;
+
+        .Direita img {
+            max-width: 100%;
+            width: 700px;
+            height: auto;
         }
-        .TextContentHeading {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
+
+        .Esquerda {
+            max-width: 100%;
         }
-        .Heading {
-            align-self: stretch;
-            color: #1E1E1E;
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 28.8px;
+
+        .Title h1 {
+            font-size: 50px;
+            color: #ccc;
         }
-        .Subheading {
-            align-self: stretch;
-            color: #757575;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24px;
+
+        .Esquerda p {
+            color: #ccc;
+            line-height: 2.5rem;
         }
-        .CardGrid {
-            align-self: stretch;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 48px;
+
+        button {
+            color: #fff;
+            background-color: #5bacdf;
+            padding: 0.9rem 1.3rem;
+            border-radius: 0.5rem;
+            border: none;
+            margin-top: 1.5rem;
+            cursor: pointer;
         }
-        .TestimonialCard {
-            flex: 1;
-            padding: 24px;
-            background: white;
-            border-radius: 8px;
-            border: 1px #D9D9D9 solid;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 24px;
+
+        button:hover {
+            background-color: #2889c2;
         }
-        .Footer {
-            width: 1200px;
-            padding: 32px;
-            background: white;
-            border-top: 1px #D9D9D9 solid;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
+
+        aside {
+            display: none;
         }
-        .TextLinkList {
-            width: 262px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12px;
+
+        /* Aside Styles */
+        .icon-menu {
+            cursor: pointer;
         }
-        .TextLinkListItem {
-            width: 89px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+
+        /* Media Queries */
+        @media screen and (max-width: 740px) {
+            ul {
+                display: none;
+            }
+
+            .links {
+                display: block;
+            }
+
+            .logo {
+                margin-right: 15rem;
+            }
+
+            aside {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                overflow: hidden;
+            }
+
+            .icon-menu ion-icon {
+                width: 45px;
+                height: 45px;
+                margin-right: 1.5rem;
+                margin-top: 2rem;
+                color: #ccc;
+            }
+
+            #barra-menu {
+                background: #2889c2;
+                height: 110vh;
+                width: 0px;
+                transition: 0.3s all;
+            }
+
+            #barra-menu ul {
+                align-items: center;
+                text-align: center;
+                padding: 5rem;
+                line-height: 5rem;
+            }
+
+            #barra-menu ul li a {
+                color: #011927;
+                text-decoration: none;
+                font-size: 1rem;
+                width: 100%;
+            }
+
+            #barra-menu ul li a:hover {
+                padding: 8px;
+                border-radius: 15px;
+                background: #5bacdf;
+            }
+
+            .C-icon {
+                margin-top: 50%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                gap: 15px;
+                overflow: hidden;
+            }
+
+            .C-icon span {
+                color: #FBF7F7;
+                font-size: 1rem;
+            }
+
+            .C-icon span:hover {
+                transition: 0.2s;
+                transform: scale(1.1);
+                color: #C229AA;
+            }
+        }
+
+        @media screen and (max-width: 580px) {
+            .Title h1 {
+                font-size: 2.2rem;
+                margin-left: 1.5rem;
+            }
+
+            .Esquerda p {
+                font-size: 1rem;
+                margin-left: 1.5rem;
+                width: 450px;
+            }
+
+            button {
+                margin-left: 1.5rem;
+            }
+
+            .Direita img {
+                max-width: 100%;
+                width: 450px;
+                margin-top: 4.5rem;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 440px) {
+            .Direita img {
+                margin-left: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .Esquerda p {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .Esquerda p {
+                width: 300px;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="ExamplesHomePage">
-        <div class="Header">
-            <div class="NavigationPillList">
-                <div class="NavigationPill"><div class="Title">Lixeira</div></div>
-                <div class="NavigationPill"><div class="Title">Sobre</div></div>
-                <div class="NavigationPill"><div class="Title">Contatos</div></div>
+    <main>
+        <header class="Container-cabeçalho">
+            <div class="logo">
+                <h1>Mente Organizada</h1>
+            </div><!-- logo -->
+
+            <ul>
+                <li><a href="#">Lixeira</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#" class="btn">Entrar</a></li>
+            </ul>
+        </header><!-- Container-cabeçalho -->
+
+        <aside>
+            <div class="icon-menu" onclick="abrirmenu()">
+                <span><ion-icon name="menu-outline"></ion-icon></span>
+            </div><!-- icon-menu -->
+
+            <div id="barra-menu">
+                <ul class="links">
+                    <li><a href="#">Lixeira</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#" class="btn">Entrar</a></li>
+                </ul>
+            </div><!-- barra-menu -->
+        </aside>
+
+        <main class="Meio">
+            <div class="Esquerda">
+                <div class="Title">
+                    <h1>Seja Bem-vindo,</h1>
+                    <h1>Começe agora a organizar sua rotina.</h1>
+                </div><!-- title -->
+
+                <p>Nossa ferramenta tem o objetivo de organizar sua rotina diaria
+                    <br> Venha conferir e começar o seu planejamento!</p>
+
+                <div class="cta">
+                    <button>Começe agora</button>
+                </div><!-- cta -->
+            </div><!-- Esquerda -->
+
+            <div class="Direita">
             </div>
-            <div class="HeaderAuth">
-                <div class="Button"><div>Login</div></div>
-            </div>
-        </div>
-        <div class="HeroActions">
-            <div class="TextContentTitle">
-                <div class="Title">Mente Organizada</div>
-                <div class="Subtitle">Seja Bem-vindo</div>
-            </div>
-            <div class="ButtonGroup">
-                <div class="Button"><div>Criar Lembrete</div></div>
-            </div>
-        </div>
-        <div class="Section">
-            <img src="https://via.placeholder.com/1200x537" alt="Placeholder" style="align-self: stretch; height: 537px;" />
-        </div>
-        <div class="CardGridTestimonials">
-            <div class="TextContentHeading">
-                <div class="Heading">Listas</div>
-                <div class="Subheading">Listas e Metas em aberto:</div>
-            </div>
-            <div class="CardGrid">
-                <div class="TestimonialCard">
-                    <div class="TextHeading">“Título 1”</div>
-                    <div class="AvatarBlock">
-                        <div class="Info">
-                            <div class="Title">Title</div>
-                            <div class="Description">Description</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="TestimonialCard">
-                    <div class="TextHeading">“Título 2”</div>
-                    <div class="AvatarBlock">
-                        <div class="Info">
-                            <div class="Title">Title</div>
-                            <div class="Description">Description</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="TestimonialCard">
-                    <div class="TextHeading">“Título 3”</div>
-                    <div class="AvatarBlock">
-                        <div class="Info">
-                            <div class="Title">Title</div>
-                            <div class="Description">Description</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Footer">
-            <div class="TextLinkList">
-                <div class="Title">Informações:</div>
-                <div class="TextLinkListItem"><div>Feedback</div></div>
-                <div class="TextLinkListItem"><div>Suporte</div></div>
-                <div class="TextLinkListItem"><div>Desenvolvedores</div></div>
-            </div>
-        </div>
-    </div>
+        </main><!-- Meio -->
+    </main><!-- main -->
 </body>
 </html>
